@@ -1,9 +1,9 @@
 <?php
 
     $dbhost = 'localhost';
-    $dbusername = 'gaoizvzypx';
-    $dbpassword = '570G7033JM4Z100V$';
-    $dbname = 'casestudy2-database';
+    $dbusername = 'root';
+    $dbpassword = '';
+    $dbname = 'crud';
 
     $connection = mysqli_connect($dbhost, $dbusername, $dbpassword, $dbname);
 
