@@ -22,35 +22,35 @@ function getParticipantCount() {
         .then((data) => {
             console.log(data);
             // Plot data to dashboard
-            select('#total-part').innerHTML = data.total;
-            select('#total-male').innerHTML = data.males;
-            select('#total-female').innerHTML = data.females;
-            select('#total-finished').innerHTML = data.finished;
+            // select('#total-part').innerHTML = data.total;
+            // select('#total-male').innerHTML = data.males;
+            // select('#total-female').innerHTML = data.females;
+            // select('#total-finished').innerHTML = data.finished;
 
-            // Append chart using ApexCharts (from template)
-            new ApexCharts(document.querySelector("#barChart"), {
-                series: [{
-                    name: 'Finished',
-                    data: [data.finished],
-                }, {
-                    name: 'On-going',
-                    data: [data.ongoing],
-                }],
-                chart: {
-                    type: 'bar',
-                    height: 150, 
-                    stacked: true,
-                },
-                plotOptions: {
-                    bar: {
-                        borderRadius: 4,
-                        horizontal: true,
-                    }
-                },
-                xaxis: {
-                    categories: ['Total Participants'],
-                }
-            }).render();
+            // // Append chart using ApexCharts (from template)
+            // new ApexCharts(document.querySelector("#barChart"), {
+            //     series: [{
+            //         name: 'Finished',
+            //         data: [data.finished],
+            //     }, {
+            //         name: 'On-going',
+            //         data: [data.ongoing],
+            //     }],
+            //     chart: {
+            //         type: 'bar',
+            //         height: 150, 
+            //         stacked: true,
+            //     },
+            //     plotOptions: {
+            //         bar: {
+            //             borderRadius: 4,
+            //             horizontal: true,
+            //         }
+            //     },
+            //     xaxis: {
+            //         categories: ['Total Participants'],
+            //     }
+            // }).render();
         });
 }
 
