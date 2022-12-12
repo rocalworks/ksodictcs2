@@ -9,4 +9,4 @@
 <script src="assets/js/tinymce.min.js"></script>
 <script src="assets/js/validate.js"></script>
 <script src="assets/js/main.js"></script> 
-<!-- <script src="assets/js/data.js"></script>  -->
+<script src="assets/js/data.js"></script> 
