@@ -7,7 +7,6 @@
     /** RUN FILE HERE */
     /** -------------------------------------------------- */
     // Check the connection
-    echo 'wow';
     if (!$connection) die("Connection failed: " . mysqli_connect_error());
     
     // Run query here
